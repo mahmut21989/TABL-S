@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #989fa6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+}
+.container{
+    width: 600px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 16px rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+.tablistBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgba(229,229,229);
+  position: relative;
+}
+.tablistBox .tablist_btn{
+    font-size: 18px;
+    font-weight: 600; 
+    color: #919191;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.tablistBox .tablist_btn.active{
+    color: #7360ff;
+    
+}
+.contentBox{
+    padding: 20px;
+}
+.contentBox .content{
+    display: none;
+}
+.contentBox .content .active{
+    display: block;
+}
+.contentBox .content h2{
+    margin-bottom: 10px;
+}
+
+.line{
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 90px;
+    height: 5px;
+    background-color: #7360ff;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+.content h2{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content p{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
